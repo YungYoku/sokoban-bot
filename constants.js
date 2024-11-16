@@ -1,0 +1,5 @@
+export const SPACE = 'space'
+export const BOX = 'box'
+export const PLAYER = 'player'
+export const WALL = 'wall'
+export const TARGET = 'target'
