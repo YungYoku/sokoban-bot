@@ -51,16 +51,16 @@ export default class Algorithm {
 		return true
 	}
 
-	getStateHistory(state) {
-		let _state = JSON.parse(JSON.stringify(state))
+	getStateHistory(_stateNode) {
+		let stateNode = _stateNode
 		const states = []
 
 		while (true) {
-			states.unshift(_state.state)
+			states.unshift(stateNode.state)
 
-			if (!_state.parent) break
+			if (!stateNode.parent) break
 
-			_state = JSON.parse(JSON.stringify(_state.parent))
+			stateNode = stateNode.parent
 		}
 
 		return states
@@ -81,7 +81,7 @@ export default class Algorithm {
 					const state = history[i]
 					this.game.renderDesk(state)
 					resolve()
-				}, 100)
+				}, 80)
 			})
 		}
 

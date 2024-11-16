@@ -82,7 +82,7 @@ export default class AStar extends Algorithm {
 
 	async run(cb) {
 		this.reset()
-		this.listO.push(new StateNode(this.game.getDefaultState()))
+		this.listO.push(this.game.getInitialStateNode())
 
 		while (this.listO.length) {
 			this.increaseIteration()

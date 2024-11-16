@@ -25,11 +25,11 @@ export default class Game {
 		this.initFields()
 		this.renderDesk()
 
-		this.stateNode = new StateNode(this.getDefaultState())
+		this.stateNode = this.getInitialStateNode()
 	}
 
-	getDefaultState() {
-		return JSON.parse(JSON.stringify(this.level))
+	getInitialStateNode() {
+		return new StateNode(JSON.parse(JSON.stringify(this.level)))
 	}
 
 	#getPlayerNextMoveCoordinates(direction, x, y) {

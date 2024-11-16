@@ -27,7 +27,7 @@ export default class BFS extends Algorithm {
 
     async run() {
         this.reset()
-        this.listO.push(new StateNode(this.game.getDefaultState()))
+        this.listO.push(this.game.getInitialStateNode())
 
         while (this.listO.length) {
             this.increaseIteration()

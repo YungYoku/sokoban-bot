@@ -34,7 +34,7 @@ export default class IterativeDFS extends Algorithm {
 
     async run() {
         this.reset()
-        this.listO.push(new StateNode(this.game.getDefaultState()))
+        this.listO.push(this.game.getInitialStateNode())
 
         let limit = 0
         while (this.listO.length) {
@@ -51,7 +51,7 @@ export default class IterativeDFS extends Algorithm {
             if (this.listO.length === 0) {
                 this.listC = {}
                 limit++
-                this.listO.push(new StateNode(this.game.getDefaultState()))
+                this.listO.push(this.game.getInitialStateNode())
             }
         }
 
