@@ -1,0 +1,1 @@
+![Preview](https://github.com/YungYoku/sokoban-bot/blob/master/assets/preview.gif)
