@@ -2,48 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>AI SOKOBAN</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>AI SOKOBAN</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <form>
-        <label>
-            Уровень:
-            <select id="level-selection">
-                <option selected value="0">1</option>
-                <option value="1">2</option>
-                <option value="2">3</option>
-                <option value="3">4</option>
-                <option value="4">5</option>
-            </select>
-        </label>
+<form>
+	<label>
+		Уровень:
+		<select id="level-selection">
+			<option selected value="0">1</option>
+			<option value="1">2</option>
+			<option value="2">3</option>
+			<option value="3">4</option>
+			<option value="4">5</option>
+		</select>
+	</label>
 
-        <label>
-            Алгоритм поиска:
-            <select id="algorithm-selection">
-                <option selected value="0">в ширину</option>
-                <option value="1">в глубину</option>
-                <option value="2">с итеративным углублением</option>
-                <option value="3">A* (эвристика 1)</option>
-                <option value="4">A* (эвристика 2)</option>
-                <option value="5">A* (эвристика 3)</option>
-            </select>
-        </label>
+	<label>
+		Алгоритм поиска:
+		<select id="algorithm-selection">
+			<option selected value="0">в ширину</option>
+			<option value="1">в глубину</option>
+			<option value="2">с итеративным углублением</option>
+			<option value="3">A* (эвристика 1)</option>
+			<option value="4">A* (эвристика 2)</option>
+			<option value="5">A* (эвристика 3)</option>
+		</select>
+	</label>
 
-        <div id="steps-count">Количество шагов: 0</div>
-        <div id="iterations-count">Количество итераций: 0</div>
+	<div id="steps-count">Количество шагов: 0</div>
+	<div id="iterations-count">Количество итераций: 0</div>
 
-        <div class="buttons">
-            <button id="start" type="button">Начать</button>
-            <button id="reset" type="button">Сбросить</button>
-        </div>
-    </form>
+	<div class="buttons">
+		<button id="start" type="button">Начать</button>
+		<button id="reset" type="button">Сбросить</button>
+	</div>
+</form>
 
-    <div id="app"></div>
+<div id="app"></div>
 
-    <script src="./interface.js" type="module"></script>
+<script src="./interface.js" type="module"></script>
 </body>
 
 </html>

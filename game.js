@@ -202,12 +202,6 @@ export default class Game {
 		}
 	}
 
-	stepBack() {
-	}
-
-	stepForward() {
-	}
-
 	getBoxTargetDistance(nextState) {
 		let totalDistance = 0
 		const boxes = []
